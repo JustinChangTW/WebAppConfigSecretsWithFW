@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebAppConfigSecretsWithFW.Models;
 
 namespace WebAppConfigSecretsWithFW.Controllers
 {
@@ -10,7 +11,14 @@ namespace WebAppConfigSecretsWithFW.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var list = new List<Customers>();
+            var name = System.Security.Principal.WindowsIdentity.GetCurrent().Name; //取得目前使用的帳號
+            using (var northwind = new Northwind())
+            {
+                list = northwind.Customers.ToList();
+            }
+
+            return View(list);
         }
 
         public ActionResult About()
