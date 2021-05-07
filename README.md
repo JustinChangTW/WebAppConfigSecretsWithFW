@@ -20,5 +20,5 @@
 
 
 > 參考：
-> [DotNET網頁實驗室](https://dotblogs.com.tw/farland/2017/03/27/112926)
-> [【潛盾機】web.config連線字串加密工具](https://blog.darkthread.net/blog/web-config-connstr-encryptor-v09-cht/)
+> * [DotNET網頁實驗室](https://dotblogs.com.tw/farland/2017/03/27/112926)
+> * [【潛盾機】web.config連線字串加密工具](https://blog.darkthread.net/blog/web-config-connstr-encryptor-v09-cht/)
